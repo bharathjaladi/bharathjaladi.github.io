@@ -36,11 +36,6 @@ jQuery(document).ready(function($){
 			var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
 			//the timeline has been initialize - show it
 			timeline.addClass('loaded');
-			//adds id to the first li of the event-content list.
-			//so we can use it later to identify the start and end of the timeline
-			$('.events-content li:first-child').attr('id', 'first');
-			//adds id to the last li of the event-content list.
-			$('.events-content li:last').attr('id', 'last');
 
 			//detect click on the next arrow
 			timelineComponents['timelineNavigation'].on('click', '.next', function(event){
@@ -51,6 +46,15 @@ jQuery(document).ready(function($){
 			timelineComponents['timelineNavigation'].on('click', '.prev', function(event){
 				event.preventDefault();
 				updateSlide(timelineComponents, timelineTotWidth, 'prev');
+			});
+			//detect click on the a single event - show new event content
+			timelineComponents['eventsWrapper'].on('click', 'a', function(event){
+				event.preventDefault();
+				timelineComponents['timelineEvents'].removeClass('selected');
+				$(this).addClass('selected');
+				updateOlderEvents($(this));
+				updateFilling($(this), timelineComponents['fillingLine'], timelineTotWidth);
+				updateVisibleContent($(this), timelineComponents['eventsContent']);
 			});
 
 			//on swipe, show next/prev event content
