@@ -160,20 +160,14 @@ p.copyright {
   text-align: center;
 }
 
-.img-right {
+.img {
   
-    display: inline-block;
-    *display: inline; /* for older IE */
-    *zoom: 1; /* for older IE */
+    width: 100%;
+    max-width: 200px;
 
 }
 
 .list-inline-item {
   padding-top:2px;
   padding-bottom: 2px;
-}
-
-.lead:not(#skill-list) {
-  margin-left: 15px;
-  margin-right: 15px;
 }
