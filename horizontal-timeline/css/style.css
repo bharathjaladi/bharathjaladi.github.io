@@ -11,13 +11,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-size: 1.6rem;
-  font-family: "Fira Sans", sans-serif;
-  color: #383838;
-  background-color: #f8f8f8;
-}
-
 a {
   color: #7b9d6f;
   text-decoration: none;
@@ -299,7 +292,7 @@ Main Components
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
   font-size: 2.6rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -404,5 +397,16 @@ Main Components
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
     transform: translateX(0%);
+  }
+
+  body, h1, h2, h3, h4, h5, h6, p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #383838;
+    background-color: #f8f8f8;
+  }
+
+  .events-content {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
