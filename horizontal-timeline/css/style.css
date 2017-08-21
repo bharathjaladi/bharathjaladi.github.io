@@ -9,6 +9,7 @@ Primary style
 
 html {
   font-size: 62.5%;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -111,6 +112,7 @@ Main Components
   z-index: 2;
   text-align: center;
   font-size: 1.3rem;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 15px;
   color: #383838;
   /* fix bug on Safari - text flickering while timeline translates */
@@ -299,6 +301,7 @@ Main Components
 .cd-horizontal-timeline .events-content em {
   display: block;
   font-style: italic;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px auto;
 }
 .cd-horizontal-timeline .events-content em::before {
@@ -306,20 +309,25 @@ Main Components
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 1.4rem;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #959595;
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 7rem;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .cd-horizontal-timeline .events-content em {
     font-size: 2rem;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .cd-horizontal-timeline .events-content p {
     font-size: 1.8rem;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
 
@@ -397,16 +405,5 @@ Main Components
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
     transform: translateX(0%);
-  }
-
-  body, h1, h2, h3, h4, h5, h6, p {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    color: #383838;
-    background-color: #f8f8f8;
-  }
-
-  .events-content {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
