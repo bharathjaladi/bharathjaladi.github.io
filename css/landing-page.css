@@ -160,3 +160,8 @@ p.copyright {
   top:0%;
   left:60%;
 }
+
+.list-inline-item {
+  padding-top:2px;
+  padding-bottom: 2px;
+}
