@@ -82,7 +82,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .lead {
-  width: 148%;
+  width: 200%;
 }
 
 .content-section-b {
@@ -159,10 +159,19 @@ p.copyright {
 .img-right {
   position:absolute;
   top:0%;
-  left:60%;
+  left:100%;
 }
 
 .list-inline-item {
   padding-top:2px;
   padding-bottom: 2px;
+}
+
+#skills {
+  height: 75%;
+}
+
+.timeline {
+  width: 100%;
+  height: 150%;
 }
