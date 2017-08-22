@@ -77,18 +77,18 @@ body, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 
-.content-section-a:not(#education):not(#space) {
+.content-section-a:not(#projects)  {
   padding: 50px 0;
   background-color: #f8f8f8;
 }
 
-#space {
-  padding-bottom: 80px;
-  background-color: #f8f8f8;
+#education {
+  padding-top: 50px;
 }
 
-#education {
-  background-color: #f8f8f8;
+#summer {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 #experience {
@@ -97,10 +97,15 @@ body, h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #e7e7e7;
 }
 
-.content-section-b:not(#experience) {
+.content-section-b:not(#education):not(#experience):not(#summer){
   padding: 50px 0;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+}
+
+#projects{
+  padding-top: 50px;
+  background-color: #f8f8f8;
 }
 
 .section-heading {
@@ -184,7 +189,7 @@ p.copyright {
 
 }
 
-#education-text, #work-text {
+#education-text, #work-text, #projects-text {
   padding-bottom: 50px;
 }
 
@@ -196,6 +201,10 @@ p.copyright {
 #rean, #penn, #chess {
   font-size: 25px;
   margin: 0;
+}
+
+#word, #website, #sudoku, #solar {
+  font-size: 25px;
 }
 
 .img-rean {
@@ -222,6 +231,38 @@ p.copyright {
     max-width: 200px;
     padding-bottom: 50px;
     padding-top: 10px;
+
+}
+
+.vid-word {
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 50px;
+  padding-top: 5px;
+}
+
+.img-website {
+  
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 50px;
+    padding-top: 45px;
+
+}
+
+.vid-sudoku {
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.img-solar {
+  
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 50px;
+    padding-top: 45px;
 
 }
 
