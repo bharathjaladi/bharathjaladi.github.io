@@ -158,66 +158,110 @@
           <hr class="section-heading-spacer">
           <div class="clearfix"></div>
           <h2 class="section-heading">Coursework</h2>
-          <!-- <object class="timeline" data="horizontal-timeline/timeline.html">
-            </object> -->
-            <div id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="card">
-                  <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h5 class="mb-0">
-                        Fall 2016
-                    </h5>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="lead" id = "classes">
-                        CIS 120: Programming Languages and Techniques I<br>
-                        CIS 160: Mathematical Foundations of Computer Science<br>
-                        MGMT 100: Leadership and Communication in Groups<br>
-                        ECON 010: Introduction to Economics for Business<br>
-                        WRIT 013: Writing Seminar in Anthropology - Competitive Childhoods</div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <h5 class="mb-0">
-                      Spring 2017
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="lead" id = "classes">
-                        CIS 121: Data Structures and Algorithms<br>
-                        MATH 240: Linear Algebra and Differential Equations<br>
-                        MGMT 101: Introduction to Management<br>
-                        BEPP 250: Managerial Economics<br>
-                        LGST 210: Corporate Responsibility and Ethics</div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" role="tab" id="headingThree" class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h5 class="mb-0">
-                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header panel-clr" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0">
+                  Fall 2016
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="lead" id="classes">
+                  CIS 120: Programming Languages and Techniques I<br> CIS 160: Mathematical Foundations of Computer Science<br>                  MGMT 100: Leadership and Communication in Groups<br> ECON 010: Introduction to Economics for Business<br>                  WRIT 013: Writing Seminar in Anthropology - Competitive Childhoods</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header panel-clr1" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="mb-0">
+                  Spring 2017
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="lead" id="classes">
+                  CIS 121: Data Structures and Algorithms<br> MATH 240: Linear Algebra and Differential Equations<br> MGMT
+                  101: Introduction to Management<br> BEPP 250: Managerial Economics<br> LGST 210: Corporate Responsibility
+                  and Ethics</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header panel-clr2" role="tab" id="headingThree" class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Fall 2017
                       </a>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="lead" id = "classes">
-                        
-                            CIS 197: JavaScript<br>
-                            CIS 240: Introduction to Computer Systems<br>
-                            CIS 262: Automata, Computability, and Complexity<br>
-                            MKTG 101: Introduction to Marketing<br>
-                            STAT 430: Probability<br>
-                            FNCE 100: Corporate Finance<br>
-                            ACCT 101: Principles of Accounting
-                          </div>
-                  </div>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                <div class="lead" id="classes">
+
+                  CIS 197: JavaScript<br> CIS 240: Introduction to Computer Systems<br> CIS 262: Automata, Computability,
+                  and Complexity<br> MKTG 101: Introduction to Marketing<br> STAT 430: Probability<br> FNCE 100: Corporate
+                  Finance<br> ACCT 101: Principles of Accounting
                 </div>
               </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- /.container -->
+
+    <script>
+      $(function () {
+        $('.panel-clr').click(function () {
+          $(this).toggleClass('on');
+          $('#headingTwo').css('background-color', '#f8f8f8');
+          $('#headingThree').css('background-color', '#f8f8f8');
+        })
+      });
+
+      $(function () {
+        $('.panel-clr1').click(function () {
+          $(this).toggleClass('on');
+          $('#headingOne').css('background-color', '#f8f8f8');
+          $('#headingTwo').css('background-color', '#f8f8f8');
+        })
+      });
+
+      $(function () {
+        $('.panel-clr2').click(function () {
+          $(this).toggleClass('on');
+          $('#headingOne').toggleClass('off');
+          $('#headingThree').css('background-color', '#f8f8f8');
+        })
+      });
+
+      $(function () {
+        $('#headingOne').hover(function () {
+          $('#headingOne').css('background-color', 'white');
+        }, function () {
+          // on mouseout, reset the background colour
+          $('#headingOne').css('background-color', '');
+        });
+      });
+
+      $(function () {
+        $('#headingTwo').hover(function () {
+          $('#headingTwo').css('background-color', 'white');
+        }, function () {
+          // on mouseout, reset the background colour
+          $('#headingTwo').css('background-color', '');
+        });
+      });
+
+      $(function () {
+        $('#headingThree').hover(function () {
+          $('#headingThree').css('background-color', 'white');
+        }, function () {
+          // on mouseout, reset the background colour
+          $('#headingThree').css('background-color', '');
+        });
+      });
+    </script>
 
   </section>
   <!-- /.content-section-b -->
@@ -268,9 +312,10 @@
         <div class="col-lg-10 col-md-9 col-s-8 col-xs-7 order-lg-2 order-md-2 order-s-2 order-xs-2">
           <p class="lead" id="chess"><b>D&D and Marketing Intern</b> | Capital Area Chess, Inc.</p>
           <p class="lead">June 2013 to May 2015</p>
-          <p class="lead" id="work-text"><a href="http://www.capitalareachess.com/" target="_blank" class="work-links">Capital Area Chess, Inc.</a> operates 
-            <a href="https://mychessguru.com/home" target="_blank" class="work-links">MyChessGuru.com</a>, an online chess coaching platform which connects coaches and students. I worked as an intern assisting 
-            with design & development and marketing for MyChessGuru.com.</p>
+          <p class="lead" id="work-text"><a href="http://www.capitalareachess.com/" target="_blank" class="work-links">Capital Area Chess, Inc.</a> operates
+            <a href="https://mychessguru.com/home" target="_blank" class="work-links">MyChessGuru.com</a>, an online chess
+            coaching platform which connects coaches and students. I worked as an intern assisting with design & development
+            and marketing for MyChessGuru.com.</p>
         </div>
       </div>
     </div>

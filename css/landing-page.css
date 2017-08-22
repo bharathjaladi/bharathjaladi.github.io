@@ -223,3 +223,18 @@ p.copyright {
 #classes {
   padding: 10px;
 }
+
+.panel-clr.on {
+  background-color: white;
+  
+}
+
+.panel-clr1.on {
+  background-color: white;
+  
+}
+
+.panel-clr2.on {
+  background-color: white;
+  
+}
