@@ -227,6 +227,7 @@ p.copyright {
 
 #classes {
   padding: 10px;
+  background-color: #fff;
 }
 
 .panel-clr.on, .panel-clr1.on, .panel-clr2.on {
