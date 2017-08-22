@@ -19,8 +19,9 @@ body, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(../img/intro-bg.jpg) no-repeat center center;
+  background: url(../img/rocks.jpeg) no-repeat center center;
   background-size: cover;
+  min-height: 100%;
 }
 
 .intro-message {
@@ -76,13 +77,17 @@ body, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 
-.content-section-a:not(#education) {
+.content-section-a:not(#education):not(#space) {
   padding: 50px 0;
   background-color: #f8f8f8;
 }
 
+#space {
+  padding-bottom: 80px;
+  background-color: #f8f8f8;
+}
+
 #education {
-  padding-top: 50px;
   background-color: #f8f8f8;
 }
 
@@ -171,7 +176,7 @@ p.copyright {
   text-align: center;
 }
 
-.img {
+.img-mnt {
   
     width: 100%;
     max-width: 200px;
@@ -224,17 +229,20 @@ p.copyright {
   padding: 10px;
 }
 
-.panel-clr.on {
-  background-color: white;
+.panel-clr.on, .panel-clr1.on, .panel-clr2.on {
+  background-color: #e7e7e7;
   
 }
 
-.panel-clr1.on {
-  background-color: white;
+.panel-clr, .panel-clr1, .panel-clr2 {
+  background-color: #f8f8f8;
   
 }
 
-.panel-clr2.on {
-  background-color: white;
-  
+#fall16, #spring17, #fall17 {
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
 }
