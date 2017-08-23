@@ -348,3 +348,16 @@ p.copyright {
 #connect {
   padding-bottom: 10px;
 }
+
+.footer-social {
+  text-align: center;
+}
+.footer-social li {
+  display: inline;
+}
+.footer-info {
+  text-align: center;
+}
+.footer-info li {
+  display: inline-block;
+}
