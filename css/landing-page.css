@@ -340,3 +340,11 @@ p.copyright {
 #nav ul li:hover a{ 
   color:#FFF;
 }
+
+#connect-row {
+  padding-bottom: 100px;
+}
+
+#connect {
+  padding-bottom: 10px;
+}
