@@ -198,7 +198,7 @@ p.copyright {
   padding-bottom: 2px;
 }
 
-#rean, #penn, #chess {
+#rean, #penn, #chess, #student-board, #innovation {
   font-size: 25px;
   margin: 0;
 }
@@ -266,6 +266,33 @@ p.copyright {
 
 }
 
+.img-mnt2 {
+  
+    width: 100%;
+    max-width: 200px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+
+}
+
+.img-mnt2 {
+  
+    width: 100%;
+    max-width: 200px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+
+}
+
+.img-innovation {
+  
+    width: 100%;
+    max-width: 200px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+
+}
+
 #classes {
   padding: 10px;
   background-color: #fff;
@@ -287,4 +314,8 @@ p.copyright {
 
 .navbar {
   position: fixed;
+}
+
+#nav ul li:hover a{ 
+  color:#FFF;
 }
