@@ -100,6 +100,10 @@
   <!-- Page Content -->
 
   </section>
+
+  <section class="content-section-b" id="education2"></section>
+
+
   <section class="content-section-b" id="education">
 
     <div class="container">
@@ -486,8 +490,12 @@
 
   <script>
     $(document).ready(function () {
+      if ($(window).width() < 768) {
+        $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+        $('.collapse').css('padding', '10px');
+        }
       var scroll_start = 0;
-      var startchange1 = $('#education');
+      var startchange1 = $('#education2');
       var offset1 = startchange1.offset();
       /* var startchange2 = $('#skills');
       var offset2 = startchange2.offset();
@@ -497,6 +505,7 @@
       var offset4 = startchange4.offset();
       var startchange5 = $('#extracurriculars');
       var offset5 = startchange5.offset(); */
+      
       $(document).scroll(function () {
         scroll_start = $(this).scrollTop();
 
@@ -508,15 +517,74 @@
           $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
         } else if (scroll_start > offset2.top) {
           $('.navbar').css('background-color', 'rgba(248, 248, 248, 0.9)');
-        } else */ if (scroll_start > offset1.top) {
+        } else */ 
+        if (scroll_start > offset1.top && $(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
           $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if ($(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+          $('.collapse').css('padding', '10px');
+          
+        }
+        else if (scroll_start > offset1.top) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '0px');
         }
         else {
           $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
         }
       });
     });
   </script>
+
+  <script>
+  jQuery(function($){
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+  
+    $(window).resize(function() {
+      var scroll_start = 0;
+      var startchange1 = $('#education2');
+      var offset1 = startchange1.offset();
+      scroll_start = $(this).scrollTop();
+      if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
+        if (scroll_start > offset1.top && $(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if($(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+          $('.collapse').css('padding', '10px');
+        }
+        else {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+        }
+        return;
+      }
+    });
+  });
+  </script>
+
   <script src="scroll.js"></script>
 
 
@@ -536,6 +604,15 @@
       ga('create', 'UA-106354611-1', 'auto');
       ga('send', 'pageview');
     
+    </script>
+
+    <script>
+    $(document).on('click','.collapse',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
+
     </script>
 
 </body>
