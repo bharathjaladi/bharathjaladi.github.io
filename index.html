@@ -28,7 +28,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top">
     <div class="container">
@@ -496,13 +495,36 @@
 
   <script>
     $(document).ready(function () {
-      if ($(window).width() < 768) {
-        $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
-        $('.collapse').css('padding', '10px');
-        }
-      var scroll_start = 0;
+      var scroll_start = $(this).scrollTop();
       var startchange1 = $('#education2');
       var offset1 = startchange1.offset();
+      if (scroll_start > offset1.top && $(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if ($(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+          $('.collapse').css('padding', '10px');
+          
+        }
+        else if (scroll_start > offset1.top) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '0px');
+        }
+        else {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+        }
       /* var startchange2 = $('#skills');
       var offset2 = startchange2.offset();
       var startchange3 = $('#experience');
@@ -580,7 +602,12 @@
           $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
           $('.collapse').css('padding', '10px');
         }
+        else if (scroll_start > offset1.top) {
+          $('.navbar').css('height', '55px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+        }
         else {
+          $('.navbar').css('height', '55px');
           $('.navbar').css('background-color', 'transparent');
           $('.collapse').css('background-color', 'transparent');
           $('.collapse').css('padding', '0px');
@@ -612,7 +639,7 @@
     
     </script>
 
-    <script>
+<script>
     $(document).on('click','.collapse',function(e) {
     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
         $(this).collapse('hide');
@@ -620,7 +647,6 @@
 });
 
     </script>
-
 </body>
 
 </html>
