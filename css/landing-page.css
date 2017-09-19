@@ -15,7 +15,6 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-header {
-  padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
@@ -195,6 +194,17 @@ p.copyright {
     max-width: 200px;
     padding-bottom: 50px;
 
+}
+
+.img-top {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #e7e7e7;
+}
+
+.bio-pic {
+  padding-bottom: 15px;
 }
 
 #education-text, #work-text, #projects-text {
