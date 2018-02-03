@@ -1,10 +1,11 @@
-$('.panel-clr2').toggleClass('on', true);
+$('.panel-clr3').toggleClass('on', true);
 
 $(function () {
     $('.panel-clr').click(function () {
       $('.panel-clr').toggleClass('on');
       $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
+      $('.panel-clr3').toggleClass('on', false);
     })
   });
 
@@ -13,6 +14,7 @@ $(function () {
       $('.panel-clr1').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
+      $('.panel-clr3').toggleClass('on', false);
     })
   });
 
@@ -21,6 +23,16 @@ $(function () {
       $('.panel-clr2').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
       $('.panel-clr1').toggleClass('on', false);
+      $('.panel-clr3').toggleClass('on', false);
+    })
+  });
+
+  $(function () {
+    $('.panel-clr3').click(function () {
+      $('.panel-clr3').toggleClass('on');
+      $('.panel-clr').toggleClass('on', false);
+      $('.panel-clr1').toggleClass('on', false);
+      $('.panel-clr2').toggleClass('on', false);
     })
   });
 
@@ -48,5 +60,14 @@ $(function () {
     }, function () {
       // on mouseout, reset the background colour
       $('#headingThree').css('background-color', '');
+    });
+  });
+
+  $(function () {
+    $('#headingFour').hover(function () {
+      $('#headingFour').css('background-color', '#e7e7e7');
+    }, function () {
+      // on mouseout, reset the background colour
+      $('#headingFour').css('background-color', '');
     });
   });
