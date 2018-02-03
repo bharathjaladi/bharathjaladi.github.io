@@ -337,17 +337,17 @@ p.copyright {
   background-color: #fff;
 }
 
-.panel-clr.on, .panel-clr1.on, .panel-clr2.on {
+.panel-clr.on, .panel-clr1.on, .panel-clr2.on, .panel-clr3.on {
   background-color: #e7e7e7;
   
 }
 
-.panel-clr, .panel-clr1, .panel-clr2 {
+.panel-clr, .panel-clr1, .panel-clr2, .panel-clr3 {
   background-color: #f8f8f8;
   
 }
 
-#fall16, #spring17, #fall17 {
+#fall16, #spring17, #fall17, #spring18 {
   margin: 0;
 }
 
