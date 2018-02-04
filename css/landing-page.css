@@ -271,6 +271,15 @@ p.copyright {
   padding-top: 5px;
 }
 
+.img-pcs {
+  
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 30px;
+  padding-top: 60px;
+
+}
+
 .img-website {
   
     width: 100%;
