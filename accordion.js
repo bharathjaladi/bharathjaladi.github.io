@@ -26,7 +26,6 @@ $(function () {
     $('.panel-clr2').click(function () {
       $('.panel-clr2').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
-      $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
       $('.panel-clr5').toggleClass('on', false);
@@ -38,7 +37,6 @@ $(function () {
       $('.panel-clr3').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
-      $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
       $('.panel-clr5').toggleClass('on', false);
     })
@@ -51,8 +49,17 @@ $(function () {
       $('.panel-clr').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
-      $('.panel-clr4').toggleClass('on', false);
       $('.panel-clr5').toggleClass('on', false);
+    })
+  });
+
+    $(function () {
+    $('.panel-clr5').click(function () {
+      $('.panel-clr5').toggleClass('on');
+      $('.panel-clr').toggleClass('on', false);
+      $('.panel-clr2').toggleClass('on', false);
+      $('.panel-clr3').toggleClass('on', false);
+      $('.panel-clr4').toggleClass('on', false);
     })
   });
 
