@@ -354,12 +354,12 @@ p.copyright {
   background-color: #fff;
 }
 
-.panel-clr.on, .panel-clr1.on, .panel-clr2.on, .panel-clr3.on, .panel-clr4.on {
+.panel-clr.on, .panel-clr1.on, .panel-clr2.on, .panel-clr3.on, .panel-clr4.on, .panel-clr5.on {
   background-color: #e7e7e7;
   
 }
 
-.panel-clr, .panel-clr1, .panel-clr2, .panel-clr3, .panel-clr4 {
+.panel-clr, .panel-clr1, .panel-clr2, .panel-clr3, .panel-clr4, .panel-clr5 {
   background-color: #f8f8f8;
   
 }

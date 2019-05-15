@@ -26,6 +26,7 @@ $(function () {
     $('.panel-clr2').click(function () {
       $('.panel-clr2').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
+      $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
       $('.panel-clr5').toggleClass('on', false);
@@ -36,6 +37,7 @@ $(function () {
     $('.panel-clr3').click(function () {
       $('.panel-clr3').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
+      $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
       $('.panel-clr5').toggleClass('on', false);
@@ -47,6 +49,7 @@ $(function () {
     $('.panel-clr4').click(function () {
       $('.panel-clr4').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
+      $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr5').toggleClass('on', false);
@@ -57,6 +60,7 @@ $(function () {
     $('.panel-clr5').click(function () {
       $('.panel-clr5').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
+      $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
@@ -105,5 +109,14 @@ $(function () {
     }, function () {
       // on mouseout, reset the background colour
       $('#headingFive').css('background-color', '');
+    });
+  });
+
+   $(function () {
+    $('#headingSix').hover(function () {
+      $('#headingSix').css('background-color', '#e7e7e7');
+    }, function () {
+      // on mouseout, reset the background colour
+      $('#headingSix').css('background-color', '');
     });
   });
