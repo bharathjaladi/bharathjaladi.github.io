@@ -1,4 +1,4 @@
-$('.panel-clr4').toggleClass('on', true);
+$('.panel-clr5').toggleClass('on', true);
 
 $(function () {
     $('.panel-clr').click(function () {
@@ -7,6 +7,7 @@ $(function () {
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
+      $('.panel-clr5').toggleClass('on', false);
     })
   });
 
@@ -17,6 +18,7 @@ $(function () {
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
+      $('.panel-clr5').toggleClass('on', false);
     })
   });
 
@@ -24,9 +26,10 @@ $(function () {
     $('.panel-clr2').click(function () {
       $('.panel-clr2').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
-      $('.panel-clr1').toggleClass('on', false);
+      $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
+      $('.panel-clr5').toggleClass('on', false);
     })
   });
 
@@ -34,9 +37,10 @@ $(function () {
     $('.panel-clr3').click(function () {
       $('.panel-clr3').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
-      $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
+      $('.panel-clr3').toggleClass('on', false);
       $('.panel-clr4').toggleClass('on', false);
+      $('.panel-clr5').toggleClass('on', false);
     })
   });
 
@@ -45,9 +49,10 @@ $(function () {
     $('.panel-clr4').click(function () {
       $('.panel-clr4').toggleClass('on');
       $('.panel-clr').toggleClass('on', false);
-      $('.panel-clr1').toggleClass('on', false);
       $('.panel-clr2').toggleClass('on', false);
       $('.panel-clr3').toggleClass('on', false);
+      $('.panel-clr4').toggleClass('on', false);
+      $('.panel-clr5').toggleClass('on', false);
     })
   });
 
