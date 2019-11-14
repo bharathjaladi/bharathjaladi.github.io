@@ -94,6 +94,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 #summer {
+  margin-top: -40px;
   padding-bottom: 50px;
   border-bottom: 1px solid #e7e7e7;
 }
@@ -220,7 +221,7 @@ p.copyright {
   padding-bottom: 2px;
 }
 
-#rean, #fb, #penn, #chess, #student-board, #innovation, #march-of-dimes {
+#rean, #fb, #citadel, #penn, #chess, #student-board, #innovation, #march-of-dimes {
   font-size: 25px;
   margin: 0;
 }
@@ -254,12 +255,42 @@ p.copyright {
 
 }
 
+.img-citadel {
+  width: 100%;
+  max-width: 200px;
+  margin-top: -15px;
+}
+
+.img-citadel-securities {
+  width: 100%;
+  max-width: 200px;
+  padding-top: 8px;
+
+}
+
 .img-penn {
   
     width: 100%;
     max-width: 200px;
     padding-bottom: 50px;
     padding-top: 83px;
+
+}
+
+.img-penn-2 {
+  
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 50px;
+    padding-top: 113px;
+
+}
+
+.img-penn-3 {
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 50px;
+    padding-top: 55px;
 
 }
 
@@ -335,7 +366,7 @@ p.copyright {
   
     width: 100%;
     max-width: 200px;
-    padding-top: 90px;
+    padding-top: 140px;
     padding-bottom: 50px;
 
 }
