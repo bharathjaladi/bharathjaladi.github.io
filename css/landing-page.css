@@ -226,7 +226,7 @@ p.copyright {
   margin: 0;
 }
 
-#word, #website, #sudoku, #solar {
+#word, #website, #sudoku, #solar, #mybook, #codewords {
   font-size: 25px;
 }
 
@@ -316,6 +316,24 @@ p.copyright {
   max-width: 200px;
   padding-bottom: 30px;
   padding-top: 60px;
+
+}
+
+.img-mybook {
+  
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+}
+
+.img-codewords {
+  
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 
 }
 
